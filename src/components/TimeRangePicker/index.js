@@ -47,14 +47,14 @@ const TimeRangePicker = ({ handleRangeChange, handleErrorChange, timeStart, time
   const maxMomentTime = moment(timeEnd || '23:45', 'HH:mm')
 
   const [startTime, setStartTime] = useState({
+    error: false,
     value: actualMoment.format(),
     label: actualMoment.format('HH:mm'),
-    error: false,
   })
   const [endTime, setEndTime] = useState({
+    error: false,
     value: maxMomentTime.format(),
     label: maxMomentTime.format('HH:mm'),
-    error: false,
   })
   const [error, setError] = useState('')
 
