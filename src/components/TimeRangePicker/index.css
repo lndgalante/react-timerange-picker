@@ -1,0 +1,13 @@
+.time-range-pickers {
+  display: flex;
+  width: 320px;
+  margin: 10px 0;
+}
+
+.time-range-pickers > div {
+  flex: 1;
+}
+
+.time-range-pickers > div ~ div {
+  margin-left: 15px;
+}
